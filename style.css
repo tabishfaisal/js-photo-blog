@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+    background-image: url(./imgs/wall.png);
+    margin: 0%;
+    padding: 35px;
+}
+
+.img{
+    width: 100%;
+    object-fit: contain;
+}
+body{
+   margin: 0%;
+   background-image: url('./imgs/cork.png');
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.row{
+   width: calc(100%/3);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+.card p{
+    height: 35px;
+}
+.overlay{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay-img{
+    width: 50%;
+    height: 60%;
+    margin: 10px;
+}
+.overlay-btn:hover {
+    background-color: red;
+    color: white;
+    width: 48px;
+    height: 30px;
+    cursor: pointer;
+}
